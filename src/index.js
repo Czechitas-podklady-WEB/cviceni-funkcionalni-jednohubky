@@ -22,21 +22,21 @@ export const showPersons = (list) => {
 // Implementujte následující funkce
 
 /**
- * Vrací příznak, zda seznam osob obsahuje nějakou ženu.
+ * Vrací pravdivostní hodnotu, zda seznam osob obsahuje nějakou ženu.
  */
 const someWoman = (persons) => {
   return persons.some((person) => person.gender === 'female')
 }
 
 /**
- * Vrací příznak, zda seznam osob obsahuje jen muže nebo ženy.
+ * Vrací pravdivostní hodnotu, zda seznam osob obsahuje jen muže nebo ženy.
  */
 const maleOrFemale = (persons) => {
   return persons.every((person) => person.gender === 'male' || person.gender === 'female')
 }
 
 /**
- * Vrací příznak, zda seznam osob obsahuje jiné pohlaví než muži nebo ženy.
+ * Vrací pravdivostní hodnotu, zda seznam osob obsahuje jiné pohlaví než muži nebo ženy.
  */
 const otherGender = (persons) => {
   return persons.some((person) => person.gender !== 'male' && person.gender !== 'female')
